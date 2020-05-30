@@ -8,10 +8,12 @@ const StyledHeader = styled.header`
   font-size: 2rem;
 `;
 
-export default function Header() {
+function Header() {
   return (
     <StyledHeader>
       <h2>Byte Poet</h2>
     </StyledHeader>
   )
 }
+
+export default Header;

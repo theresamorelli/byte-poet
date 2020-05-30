@@ -15,10 +15,12 @@ const StyledBoard = styled.div`
   justify-content: flex-end;
 `;
 
-export default function Board() {
+function Board() {
   return (
     <StyledBoard className='board'>
       <WordTray />
     </StyledBoard>
   );
 }
+
+export default Board;

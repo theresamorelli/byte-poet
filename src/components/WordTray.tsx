@@ -12,17 +12,15 @@ const StyledWordTray = styled.div`
   margin-right: 10px;
 `;
 
-class WordTray extends Component {
-  render() {
-    const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 45);
-    return (
-      <StyledWordTray>
-        {randomWords.map((word) => (
-          <Word word={word} />
-        ))}
-      </StyledWordTray>
-    );
-  }
+function WordTray() {
+  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 45);
+  return (
+    <StyledWordTray>
+      {randomWords.map((word) => (
+        <Word word={word} />
+      ))}
+    </StyledWordTray>
+  );
 }
 
 export default WordTray;

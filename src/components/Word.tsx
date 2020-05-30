@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useDrag } from 'react-dnd';
 import styled from 'styled-components';
 
 const StyledWord = styled.div`
@@ -8,8 +9,8 @@ const StyledWord = styled.div`
   border: 1px solid black;
 `;
 
-export default class Word extends Component {
-  render() {
-    return <StyledWord>{this.props.word}</StyledWord>;
-  }
+function Word(props: any) {
+  return <StyledWord>{props.word}</StyledWord>;
 }
+
+export default Word;
