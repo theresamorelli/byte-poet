@@ -17,10 +17,10 @@ const WordTray: React.FC = () => {
   return (
     <StyledWordTray>
       {randomWords.map((word) => (
-        <Word word={word} />
+        <Word text={word} />
       ))}
     </StyledWordTray>
   );
-}
+};
 
 export default WordTray;
