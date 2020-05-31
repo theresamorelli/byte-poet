@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useDrag } from 'react-dnd';
 import styled from 'styled-components';
 
@@ -9,7 +9,7 @@ const StyledWord = styled.div`
   border: 1px solid black;
 `;
 
-function Word(props: any) {
+const Word: React.FC = (props: any) => {
   return <StyledWord>{props.word}</StyledWord>;
 }
 

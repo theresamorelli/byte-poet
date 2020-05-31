@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   font-size: 2rem;
 `;
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <StyledHeader>
       <h2>Byte Poet</h2>

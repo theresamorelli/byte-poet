@@ -15,7 +15,7 @@ const StyledBoard = styled.div`
   justify-content: flex-end;
 `;
 
-function Board() {
+const Board: React.FC = () => {
   return (
     <StyledBoard className='board'>
       <WordTray />

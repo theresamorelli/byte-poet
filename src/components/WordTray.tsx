@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Word from './Word';
 import words from '../data/words.json';
@@ -12,7 +12,7 @@ const StyledWordTray = styled.div`
   margin-right: 10px;
 `;
 
-function WordTray() {
+const WordTray: React.FC = () => {
   const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 45);
   return (
     <StyledWordTray>
