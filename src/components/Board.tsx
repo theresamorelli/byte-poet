@@ -14,6 +14,7 @@ const StyledBoard = styled.div`
   display: flex;
   justify-content: flex-end;
   max-width: 1000px;
+  overflow: hidden;
   position: relative; // indicates droppable area for Draggable library
 `;
 
