@@ -7,7 +7,7 @@ interface WordObject {
 }
 
 const StyledWord = styled.div<{ zIndex: number }>`
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   padding: 4px 10px;
   margin: 3px;
   border: 1px solid #00000036;

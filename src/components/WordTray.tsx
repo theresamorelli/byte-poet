@@ -9,6 +9,7 @@ const StyledWordTray = styled.div`
   align-content: center;
   justify-content: flex-end;
   width: 25%;
+  overflow: hidden;
 `;
 
 const WordTray: React.FC = () => {
