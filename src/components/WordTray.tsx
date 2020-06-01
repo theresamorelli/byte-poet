@@ -12,7 +12,7 @@ const StyledWordTray = styled.div`
 `;
 
 const WordTray: React.FC = () => {
-  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 40);
+  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 50);
   return (
     <StyledWordTray>
       {randomWords.map((word) => (
