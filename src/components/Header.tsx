@@ -3,17 +3,21 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   text-align: center;
-  padding: 15px;
-  color: #FFF;
+  color: #fff;
   font-size: 2rem;
+  font-family: 'Special Elite', serif;
+`;
+
+const StyledAppName = styled.h2`
+  margin: 2.5rem 0;
 `;
 
 const Header: React.FC = () => {
   return (
     <StyledHeader>
-      <h2>Byte Poet</h2>
+      <StyledAppName>Byte Poet</StyledAppName>
     </StyledHeader>
-  )
-}
+  );
+};
 
 export default Header;

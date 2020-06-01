@@ -9,11 +9,10 @@ const StyledWordTray = styled.div`
   align-content: center;
   justify-content: flex-end;
   width: 25%;
-  margin-right: 10px;
 `;
 
 const WordTray: React.FC = () => {
-  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 45);
+  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 40);
   return (
     <StyledWordTray>
       {randomWords.map((word) => (

@@ -8,16 +8,18 @@ interface WordObject {
 }
 
 const StyledWord = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 4px 10px;
   margin: 3px;
   border: 1px solid black;
   cursor: default;
+  font-family: 'Rubik',  sans-serif;
+  background: #fff;
 `;
 
 const Word: React.FC<WordObject> = ({ text }) => {
   return (
-    <Draggable>
+    <Draggable bounds={'#board'}>
       <StyledWord>{text}</StyledWord>
     </Draggable>
   );
