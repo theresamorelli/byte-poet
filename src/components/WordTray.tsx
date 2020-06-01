@@ -15,8 +15,8 @@ const WordTray: React.FC = () => {
   const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 50);
   return (
     <StyledWordTray>
-      {randomWords.map((word) => (
-        <Word text={word} />
+      {randomWords.map((word, i) => (
+        <Word text={word} key={i} />
       ))}
     </StyledWordTray>
   );
