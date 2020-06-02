@@ -10,16 +10,24 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  min-height: 100px;
+
+  @media (max-width: 700px) {
+    font-size: 1.3rem;
+    min-height: 60px;
+  }
 `;
 
 const StyledLogo = styled.img`
 position: relative;
 top: -5px;
   width: 60px;
+
+  @media (max-width: 700px) {
+      width: 40px;
 `;
 
-const StyledAppName = styled.h2`
+const StyledAppName = styled.h3`
   margin: 0 0 0 20px;
 `;
 

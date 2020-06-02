@@ -6,16 +6,22 @@ const StyledBoard = styled.div`
   background-color: white;
   margin: 0 auto;
   padding: 20px;
-  height: calc(85vh - 120px);
-  border-radius: 10px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 800px;
+  height: 70vh;
+  overflow: hidden;
+  position: relative; // indicates droppable area for Draggable library
+
   -webkit-box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: flex-end;
-  max-width: 700px;
-  overflow: hidden;
-  position: relative; // indicates droppable area for Draggable library
+
+  @media (max-width: 600px) {
+    max-width: 95%;
+    border-radius: 5px;
+  }
 `;
 
 const Board: React.FC = () => {

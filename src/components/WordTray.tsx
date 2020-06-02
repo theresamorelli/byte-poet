@@ -9,6 +9,16 @@ const StyledWordTray = styled.div`
   align-content: center;
   justify-content: flex-end;
   width: 25%;
+
+  @media (max-width: 800px) {
+    font-size: 0.7rem;
+    width: 35%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.5rem;
+    width: 40%;
+  }
 `;
 
 const WordTray: React.FC = () => {
