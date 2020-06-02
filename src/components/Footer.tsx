@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { colors } from '../styles/variables';
 
 const StyledFooter = styled.div`
   position: relative;
@@ -7,12 +8,17 @@ const StyledFooter = styled.div`
   margin: 0 auto;
   width: fit-content;
   height: 12px;
-  background-color: goldenrod;
   color: #fff;
   padding: 7px;
-  border-radius: 10px;
   font-family: 'Special Elite', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -webkit-transition: background 0.1s;
+
+  :hover {
+    background: ${colors.accent};
+  }
 `;
 
 const StyledText = styled.div`
@@ -21,6 +27,7 @@ const StyledText = styled.div`
 
 const StyledLink = styled.a`
   text-decoration: none;
+  color: white;
 `;
 
 export default function Footer() {
@@ -30,7 +37,7 @@ export default function Footer() {
         href="https://github.com/theresamorelli/byte-poet"
         target="_blank"
       >
-        <StyledText>MADE WITH &#10084; by Theresa</StyledText>
+        <StyledText>Made with &#10084; by Theresa</StyledText>
       </StyledLink>
     </StyledFooter>
   );
