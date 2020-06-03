@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Word from './Word';
-import words from '../data/words.json';
 
 const StyledWordTray = styled.div`
   display: flex;
@@ -12,20 +11,22 @@ const StyledWordTray = styled.div`
 
   @media (max-width: 800px) {
     font-size: 0.7rem;
-    width: 35%;
   }
 
   @media (max-width: 500px) {
     font-size: 0.5rem;
-    width: 40%;
+    width: 20%;
   }
 `;
 
-const WordTray: React.FC = () => {
-  const randomWords = words.sort(() => 0.5 - Math.random()).slice(0, 40);
+type WordTrayProps = {
+  words: string[];
+};
+
+const WordTray: React.FC<WordTrayProps> = ({ words }) => {
   return (
     <StyledWordTray>
-      {randomWords.map((word, i) => (
+      {words?.map((word, i) => (
         <Word text={word} key={i} />
       ))}
     </StyledWordTray>
